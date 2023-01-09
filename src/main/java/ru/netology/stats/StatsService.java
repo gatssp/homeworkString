@@ -47,6 +47,7 @@ public class StatsService {
         }
         return counter;
     }
+
     public int aboveAverageSales(long[] sales) {
         int counter = 0;
         for (long sale : sales) {

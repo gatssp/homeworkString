@@ -15,8 +15,6 @@ public class StatsServiceTest {
         long expected = 8 + 15 + 13 + 15 + 17 + 20 + 19 + 20 + 7 + 14 + 14 + 18;
         long actual = service.sumAllSales(sales);
         Assertions.assertEquals(expected, actual);
-
-
     }
 
     @Test
@@ -54,6 +52,7 @@ public class StatsServiceTest {
         long actual = service.belowAverageSales(sales);
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void aboveAverageSales() {
         StatsService service = new StatsService();
